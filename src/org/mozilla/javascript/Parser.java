@@ -2452,9 +2452,9 @@ public class Parser
             return nf.createString(s);
 
           case Token.KEEPCOMMENT:
-            String s = ts.getString();
-            decompiler.addPreservedComment(s);
-            return nf.createString(s);
+            String s2 = ts.getString();
+            decompiler.addPreservedComment(s2);
+            return nf.createString(s2);
 
           default:
             reportError("msg.syntax");
